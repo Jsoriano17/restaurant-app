@@ -3,6 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import axios from "axios";
 import MenuForm from "./components/MenuForm";
+import MenuItemForm from "./components/MenuItemForm";
 import Menu from "./components/Menu";
 import { Container } from "semantic-ui-react";
 
@@ -100,6 +101,7 @@ export default class App extends React.Component {
     return (
       <Container>
         <MenuForm addMenuProp={this.addMenu} />
+        <MenuItemForm />
         {this.renderMenus()}
       </Container>
     );
