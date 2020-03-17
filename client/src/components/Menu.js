@@ -38,6 +38,7 @@ export default class Menu extends React.Component {
           <Button onClick={this.toggleForm}>
             {this.state.showForm ? "hide form" : "edit"}
           </Button>
+          <Button>Delete</Button>
         </Card.Content>
       </Card>
     );
